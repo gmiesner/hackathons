@@ -1,0 +1,26 @@
+runtime: python37
+
+handlers:
+  - url: /public/static
+    static_dir: public/static
+    secure: always
+
+  - url: /static
+    static_dir: public/static
+    secure: always
+
+  - url: /public/js
+    static_dir: public/js
+    secure: always
+
+  - url: /public/css
+    static_dir: public/css
+    secure: always
+
+  - url: /public/assets
+    static_dir: public/assets
+    secure: always
+
+  - url: /api/.*
+    script: auto
+    secure: always

@@ -1,0 +1,36 @@
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+a.ibutton{
+    display:inline-block;
+    padding:1em 3em;
+    border:0.16em solid #dab072;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    font-size: x-large;
+    color:#dab072;
+    text-align:center;
+    transition: all 0.15s;
+    width: 30em;
+    border-radius: 8px;
+}
+a.ibutton:hover{
+    color:#68AD7F;
+    border-color:#68AD7F;
+}
+a.ibutton:active{
+    color:#68AD7F;
+    border-color:#68AD7F;
+}

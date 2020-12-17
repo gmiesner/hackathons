@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "badge": {
+      "type": "number"
+    },
+    "department": {
+      "type": "string"
+    },
+    "ratings": {
+      "type": "object",
+      "properties": {
+        "friendliness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "difficulty": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "appropriateness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "helpfulness": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "nonviolence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        }
+      }
+    },
+    "tags": {
+      "required": [],
+      "type": "object",
+      "properties": {
+        "race": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "age": {
+          "type": "number"
+        }
+      }
+    },
+    "comments": {
+      "type": "string"
+    },
+    "location": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 2,
+      "minItems": 2
+    }
+  }
+}

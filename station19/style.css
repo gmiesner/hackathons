@@ -1,0 +1,283 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css');
+.space {
+  background: rgba(128, 0, 128, 0.1) center / 200px 200px round;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.stars1 {
+  animation: space 180s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+  animation: space 240s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+.stars3 {
+  animation: space 300s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+
+@keyframes space {
+  40% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  60% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+.container {
+  position: absolute;
+  width: 90%;
+  top: 65%;
+  left: 10%;
+  right: 10%;
+  margin-left: -64.5px;
+  margin-top: -85.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.space-station {
+  flex: 5;
+  animation: float 3s ease-out infinite;
+}
+.space-station-img {
+  width: 100%;
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  flex: 1;
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+}
+.shadow ellipse {
+  transform-origin: center center;
+}
+
+@keyframes shrink {
+  0% {
+    width: 100%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 100%;
+    margin: 0 5%;
+  }
+}
+
+/* gstyle.css */
+/*
+.group-living-body {
+  background: radial-gradient(circle at bottom, navy 0, black 100%);
+  height: 100vh;
+  overflow: hidden;
+  cursor: url('cat.png'), auto;
+}
+
+.stars1 {
+  animation: space 180s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 25px 5px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 50px 25px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 125px 20px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 50px 75px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 15px 125px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 110px 80px, white, rgba(255, 255, 255, 0));
+}
+
+.stars2 {
+  animation: space 240s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 75px 125px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 100px 75px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 199px 100px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 20px 50px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 100px 5px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 5px 5px, white, rgba(255, 255, 255, 0));
+}
+
+.stars3 {
+  animation: space 300s ease-in-out infinite;
+  background-image: 
+    radial-gradient(1px 1px at 10px 10px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1px 1px at 150px 150px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 60px 170px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(1.5px 1.5px at 175px 180px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2px 2px at 195px 95px, white, rgba(255, 255, 255, 0)), 
+    radial-gradient(2.5px 2.5px at 95px 145px, white, rgba(255, 255, 255, 0));
+}
+*/
+/* tcstyle.css */
+/*cube code: https://codepen.io/goodkatz/pen/NQedop*/
+
+
+.wrap { 
+	perspective: 800px;
+  perspective-origin: 50% 100px;
+}
+#cube {
+  position: relative;
+  width: 400px;
+  margin:0 auto;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  -webkit-transition: -webkit-transform 1s;
+}
+#cube div {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+}
+
+.side {
+  width: 400px;
+}
+
+.front {
+  background: url(images/background.png);
+  transform: translate3d(0,0,100px);
+}
+.left {
+  background: url(images/background.png);
+  transform: rotateY(270deg) translate3d(-100px,0,0);
+    transform-origin: center left;
+}
+.back {
+  background: url(images/background.png);
+	transform: translate3d(0,0,-100px) rotateY(180deg);
+}
+.right {
+  background: url(images/background.png);
+	transform: rotateY(-270deg) translate3d(100px,0,0);
+    transform-origin: top right;
+}
+
+/* Devonne's Playground */
+.body {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: #111;
+	font-family: "Montserrat";
+}
+
+.containera {
+	min-width: 800px;
+	min-height: 500px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.sidea {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.contenta {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.contenta h1 {
+	position: relative;
+}
+.contenta p {
+	margin-top: 50px;
+	line-height: 2em;
+}
+.contenta h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #3e3;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.fronta {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(https://livewallpaperhd.com/wp-content/uploads/2017/07/Dark-Elegant-Wallpaper.jpg);
+}
+.backa {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+}
+.containera:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}

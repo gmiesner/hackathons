@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Group Living</title>
+    <style>
+      * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.body {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: #111;
+	font-family: "Montserrat";
+}
+
+.containera {
+	min-width: 800px;
+	min-height: 500px;
+	border-radius: 20px;
+	position: relative;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+
+.sidea {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.contenta {
+	transform: translatez(70px) scale(0.8);
+	line-height: 1.5em;
+}
+.contenta h1 {
+	position: relative;
+}
+.contenta p {
+	margin-top: 50px;
+	line-height: 2em;
+}
+.contenta h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #3e3;
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.fronta {
+	z-index: 2;
+	background-size: 100vh;
+	background-size: cover;
+	background-image: url(https://livewallpaperhd.com/wp-content/uploads/2017/07/Dark-Elegant-Wallpaper.jpg);
+}
+.backa {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
+}
+.containera:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form label,
+form input {
+	display: block;
+}
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+form label {
+	margin: 15px 0;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #fff;
+	transition: 0.35s ease-in-out;
+	position: fixed;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #fff;
+	color: #122;
+}
+
+</style>
+
+  </head>
+
+
+  <main class="body">
+<div class="containera">
+	<div class="fronta sidea">
+		<div class="content">
+<img src="https://nasa-hackathon--ishitarb5.repl.co/images/back.png">
+		</div>
+	</div>
+	<div class="backa sidea">
+		<div class="contenta">
+			<h1>Leadership</h1>
+			<p>Definition: How well a team adapts to changed situations. A leader enhances the group's ability to execute its purpose through positive influence. A follower (aka a subordinate leader) actively contributes to the leader’s direction. Establish an environment of trust.
+<br>
+<br>       
+To practice good Leadership/Followership EB, accept responsibility. Adjust your style to your environment. Assign tasks and set goals. Lead by example. Give direction, information, feedback, coaching and encouragement. Ensure your teammates have resources. Talk when something isn’t right. Ask questions. Offer solutions, not just problems.
+			</p>
+		</div>
+	</div>
+
+</div>
+
+    
+  </main>
+</html>

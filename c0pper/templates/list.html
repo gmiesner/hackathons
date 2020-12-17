@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Copper</title>
+
+  <link rel="stylesheet" href="../public/css/list.css">
+
+</head>
+
+<body style="background-color:#dab072;">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../public/js/list.js"></script>
+
+    <div class="topnav">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../public/assets/logo.png">
+                </a>
+            </li>
+           
+            <li><a href="search.html">Search</a></li>
+            <li><a href="rate.html">Rate</a></li>
+            <li><a class="active">List</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+    </div> 
+
+    <div class="content">
+        <div id="form">
+            <form>
+                <br><br>
+                <label for="prec">Precinct</label><br>
+                <input type="text" id="prec" name="prec"><br><br>
+                <div class="submit" id="submit">Search</div> <br><br><br>
+            </form> 
+        </div>
+
+        <div id="profile">
+            <a href="../public">Search Another</a>
+            <br><br><br>
+            Badge numbers of rated officers in this precinct:
+            <br><br><br>
+            <div id="list"></div>
+            <br><br><br>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Copper</title>
+
+  <link rel="stylesheet" href="../public/css/rate.css">
+
+</head>
+
+<body style="background-color:#dab072;">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://dobtco.github.io/starrr/dist/starrr.js"></script>
+    <script src="../public/js/rate.js"></script>
+
+    <div class="topnav">
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../public/assets/logo.png">
+                </a>
+            </li>
+           
+            <li><a href="search.html">Search</a></li>
+            <li><a class="active">Rate</a></li>
+            <li><a href="list.html">List</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+    </div> 
+
+    <div class="content">
+      <div id="form">
+        <form>
+          <label for="bnumber">Badge Number</label><br>
+          <input type="text" id="bnumber" name="bnumber" placeholder="Badge Number"><br>
+      
+          <label for="City">Department</label><br>
+          <input type="text" id="city" name="city" placeholder="Location of Incident"><br><br><br>
+      
+          <label for="rating">Friendliness</label>
+          <div id="stars_1" class="starrr"></div> <br>
+          <label for="rating">Ease of Interaction</label>
+          <div id="stars_2" class="starrr"></div> <br>
+          <label for="rating">Appropriateness</label>
+          <div id="stars_3" class="starrr"></div> <br>
+          <label for="rating">Nonviolence</label>
+          <div id="stars_4" class="starrr"></div> <br>
+          <label for="rating">Helpfulness</label>
+          <div id="stars_5" class="starrr"></div> <br> <br> <br>
+      
+          <label for="description">Description</label><br>
+          <textarea id="description" name="description" placeholder="Description of Incident" style="height:200px"></textarea><br><br><br>
+
+          <label for="locat">Please enter the nearest landmark to the incident or the name of the street (please include full address if possible):</label><br>
+          <input type="text" id="locat" name="locat" placeholder="Starbucks, Ada, MI">
+          <div id="cbutton" class="cbutton">
+            Get Coordinates
+          </div>
+          <div id="dlocat">
+            The full location you've entered would be <span id="formatted"></span>. The latitude is <span id="lat"></span> and the longitude is <span id="long"></span>.
+            <div id="map"></div>
+          </div>
+          <br><br><br>
+      
+          If possible, upload an image of the officer's badge: <br><br>
+          <input type="file" name="fileToUpload" id="file">
+          
+          <br><br><br>
+          <div class="submit" id="submit">Submit</div>
+        </form>
+      </div>        
+      <div id="ty">
+        Thank you for your submission!
+      </div>
+    </div>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeYhmuppJHXysIGKMLyleeCNfjxm4aNmU&callback=initMap">
+    </script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+  <title> melodivity </title>
+  <link rel="icon"  type="image/png" href="https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2F89890a27-4872-4fd8-a747-5b1907a57503.image.png?v=1595707014130">
+  <script
+    type = "text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"
+  ></script>
+  <script type="text/javascript">
+    function showPin(id) {
+      let listOfIDs = [
+        "displayCalligraphy",
+        "displayDraw",
+        "displayHome",
+        "displayOrigami",
+        "displayPoetry",
+        "displayRecipes",
+        "displaySewing"
+      ]
+      for(let i = 0; i < listOfIDs.length; i++) {
+        if(listOfIDs[i] == id) {
+          if(document.getElementById(id).style.display == "none") {
+            document.getElementById(id).style.display = "block";
+          } else {
+            document.getElementById(id).style.display = "none";
+          }
+        } else {
+          document.getElementById(listOfIDs[i]).style.display = "none";
+        }
+      }
+    }
+  </script>
+  </head>
+  
+<body> 
+  
+  <div id="header">
+      <img src="https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2Flogo.png?v=1595701603870" id = "home" width="400" height="400" alt="melodivity">
+  </div>
+  <div id="links">
+    <a class = "#active" href="#home"> Home </a>
+    <a href="#instructions"> Instructions </a>
+    <a href="#about"> About Us </a>
+  </div>
+  
+</body>
+  
+
+<div id="instructions">
+  <br>
+  <h2>
+     Instructions
+  </h2>
+  <ol>
+  <div class="container">        
+    <li> Select a genre for your playlist. </li>    
+    <form action="">
+            <input type="hidden" id="hidden_token">
+            <div class="col-sm-6 form-group row mt-4 px-0">
+                <label for="Genre" class="form-label col-sm-20">Genre:</label>
+                <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                    <option>Select....</option>                    
+                </select>
+            </div>
+      <br>
+      <li> Then select which playlist you would like to be displayed. </li>
+            <div class="col-sm-6 form-group row px-0">
+                <label for="Genre" class="form-label col-sm-20">Playlists:</label>
+                <select name="" id="select_playlist" class="form-control form-control-sm col-sm-10">
+                    <option>Select....</option>                    
+                </select>
+            </div>                  
+            <div class="col-sm-6 row form-group px-0">
+                <button type="submit" id="btn_submit" class="btn btn-success col-sm-12">Search</button>
+            </div>          
+        </form>        
+        <div class="row">
+            <div class="col-sm-6 px-0">
+                <ol type="a">
+                <div class="list-group song-list">
+                    
+                </div>   
+              </ol>
+            </div>
+            <div class="offset-md-4 col-sm-4" id="song-detail">               
+            </div>
+        </div>   
+    </div>
+    <script src="server.js"></script>
+    <br>
+    <li> Next, find a craft for you to do while listening to your new beats. </li>
+    <button class = "boards" onclick="showPin('displayCalligraphy')">
+      Calligraphy
+    </button>
+    <button class = "boards" onclick="showPin('displayDraw')">
+      Draw and Paint
+    </button>
+    <button class = "boards" onclick="showPin('displayHome')">
+      Home Decor
+    </button>
+    <button class = "boards" onclick="showPin('displayOrigami')">
+      Origami
+    </button>
+    <button class = "boards" onclick="showPin('displayPoetry')">
+      Poetry Prompts
+    </button>
+    <button class = "boards" onclick="showPin('displayRecipes')">
+      Recipes
+    </button>
+    <button class = "boards" onclick="showPin('displaySewing')">
+      Sewing
+    </button>
+    <div id = "displayDraw" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/theartsycraftsy/guide-your-inner-artist/inspired-paint-draw/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+        <div id = "displayHome" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/hometalk/budget-home-decorating-diy/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+    <div id = "displayPoetry" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/pspoets/poetry-writing-prompts/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+    <div id = "displayCalligraphy" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/nourishnestle/crafts-handlettering-calligraphy/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+    <div id = "displayRecipes" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/shabbycreek/recipes/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+    <div id = "displaySewing" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/nationalsewing/sewing-projects/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+    <div id = "displayOrigami" style="display:none;" class="answer_list">
+      <a href="https://www.pinterest.com/emliston/origami/"
+         data-pin-do="embedBoard"
+         data-pin-board-width="400"
+         data-pin-scale-height="320"
+         data-pin-scale-width="100">
+      </a>
+    </div>
+  </ol>
+  </div>
+  <br>
+<div id = "about">
+  <h2>
+     About Us
+  </h2>
+  <p>
+    Melodivity was created for <a href = "https://hobbyhacks.techtogether.io/" target = "_blank">HobbyHacks</a> over the course of a weekend. Melodivity aims to help people relax by currating a playlist based on their spotify user data and pairing the playlist with a new craft to explore their creativity and decompress.
+  </p>
+  <div class = "names">
+    <h3>
+     Joanne Chen 
+  </h3>
+  <h3>
+      Gabriella Miesner 
+  </h3>
+  <h3>
+    Christina Tan 
+    </h3>
+     
+  </div>
+  <div class = "headshots">
+    <img class = "headshot" src = "https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2Fjoanne%20(2).png?v=1595712872165" alt = "Joanne Chen Headshot">
+  <img class = "headshot" src = "https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2F0-2.jpg?v=1595709460191" alt = "Gabriella Miesner Headshot">
+    <img class = "headshot" src = "https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2F0.jpg?v=1595709464912" alt = "Christina Tan Headshot">
+    
+  </div>
+<div class = "bio">
+ <p>
+     Joanne will be pursuing a Bachelor's in Computer Science at the University of Texas at Austin this fall.
+  </p>
+  <p>
+     Gabriella will be pursuing a Bachelor's in Computer Science at Missouri University of Science and Technology this fall. 
+  </p>
+  <p>
+    Christina will be pursuing a Bachelor's in Computer Science at the University of Michigan this fall. 
+  </p>
+ 
+  </div>
+  <div class = "names">
+    
+     <h3>
+    Madhu Vakkadala
+      </h3>
+   <h3>
+    Jennifer Wang 
+  </h3>
+      </div>
+  <div class = "headshots">
+    <img class = "headshot" src = "https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2FScreen%20Shot%202020-07-25%20at%204.00.57%20PM.png?v=1595710881945" alt = "Madhu Vakkadala Headshot">
+    <img class = "headshot" src = "https://cdn.glitch.com/1c3e3fd7-5210-480f-8b36-c0ece7ecf1ae%2Fjennifer.png?v=1595738484194" alt = "Jennifer Wang Headshot">
+  
+  </div>
+  <div class = "bio">
+     <p>
+    Madhu will be pursuing a Bachelor's in Computer Science at the University of Illinois at Urbana-Champaign this fall. 
+  </p>
+    <p>
+    Jennifer will be pursuing a Bachelor's in Computer Science at the Brown University this fall. 
+  </p>
+  </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  
+</html> 

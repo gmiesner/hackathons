@@ -1,0 +1,5 @@
+# 🧶🎧  melodivity : where melodies meet creativity
+<a href = "http://melodivity.space/">melodivity</a> returns multiple playlists based on the genre the user selects. after selecting a genre, the user can pick from multiple playlists within that genre to play. After that, the user is able to choose a craft to make while listening to music by selecting a category. the website returns a section of pinterest with many crafts from that category.
+
+## 👩‍💻 about the creators
+<a href = "https://github.com/joannejchen" target = "_blank">joanne chen</a>, <a href = "https://github.com/gmiesner" target = "_blank">gabriella miesner</a>, <a href = "https://github.com/christinatan1" target = "_blank">christina tan</a>, <a href = "https://github.com/madhuv2002" target = "_blank">madhu vakkadala</a>, and <a href = "https://github.com/jennjwang" target = "_blank">jennifer wang</a> created <a href = "http://melodivity.space/" target = "_blank"> melodivity </a> over the course of a weekend for the <a href = "https://hobbyhacks.techtogether.io/" target = "_blank"> hobbyhacks </a> hackathon. 

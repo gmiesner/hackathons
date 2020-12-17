@@ -1,0 +1,107 @@
+
+#header{
+/*   background-color: #AFBF96;  */
+  background-color: white;
+  color: grey;
+  text-align: center;
+}
+
+h1{
+  font-family: "Sora";
+/*   color: #17202A;  */
+}
+
+#links{
+   background-color:#666;
+  padding:1.2rem;
+}
+#links a{
+  font-family: "Raleway";
+  color: white;
+  width: 50%;
+  padding:0rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+#links a:hover {
+  color: #afbf96;
+}
+
+h2{
+  font-family: "Sora";
+  padding: 0rem 1rem;
+/*   color: #17202A;  */
+}
+h3{
+  font-family: "Sora";
+  padding: 0rem 1rem;
+}
+
+body{
+/*   background-color: #AFBF96;  */
+}
+
+button{
+  font-family: "Raleway";
+  background-color: #F0F1F2;
+  color: #17202A;
+}
+
+p{
+  font-family: "Raleway";
+  padding:0rem 1rem 0rem;
+}
+
+ol{
+  font-family:"Raleway";
+}
+
+a{
+  text-decoration: none;
+  color: #9CBF96;
+  font-weight:bolder;
+}
+
+.headshot{
+padding: 0rem 1rem;
+border-radius:50%;
+height:13rem;
+}
+
+.names{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.headshots{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bio{
+   display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.boards {
+  font-family: "Raleway";
+  background-color: #F0F1F2;
+  color: #17202A;
+  border-radius: 18px;
+}
+
+.boards:hover {
+  background-color: #17202A;
+  color: #F0F1F2;
+}
+
+.boards:focus {
+  background-color: #17202A;
+  color: #F0F1F2;
+}

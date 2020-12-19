@@ -20,11 +20,11 @@ while True:
         }
 
         csv_writer.writerow(info)
-        print(bp,)
-        # if chlol >= 200 or chlol <= 50:
-        #     chlol = random.randint(60,180)
-        # else:
-        #     chlol = random.randint(50,200)
+        print(bpm)
+        if bpm >= 150 or bpm <= 50:
+            bpm = random.randint(70,150)
+        else:
+            bpm = random.randint(80,160)
         
      
     time.sleep(1)

@@ -1,0 +1,22 @@
+{
+  "heartrate":{
+    "onedayavg":-1,
+    "sevendayavg":-1
+  },
+  "bloodpressure":{
+    "onedayavg":[-1,-1],
+    "sevendayavg":[-1,-1]
+  },
+  "sleep":{
+    "threedayavg":-1,
+    "sevendayavg":-1
+  },
+  "steps":{
+    "daily":-1,
+    "7dayavg":-1
+  },
+  "water":{
+    "dailycupsdrinken":-1,
+    "7dayavg":-1
+  }
+}
